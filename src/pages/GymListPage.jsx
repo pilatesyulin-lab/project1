@@ -1,6 +1,6 @@
 import React, { useReducer, useRef, useEffect, useState } from "react";
 import GymItem from "../GymItem";
-
+const API_KEY = "3fb01f455c25414eb63a4d4759122863";
 function gymReducer(state, action) {
   switch (action.type) {
     case "INIT_DATA":
