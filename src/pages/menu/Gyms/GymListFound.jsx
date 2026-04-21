@@ -1,6 +1,7 @@
 import React, { useReducer, useRef, useEffect, useState } from "react";
-import GymItem from "../GymItem";
-const API_KEY = "3fb01f455c25414eb63a4d4759122863";
+import GymItem from "./GymItem";
+import GymListPage from "./GymListPage";
+
 function gymReducer(state, action) {
   switch (action.type) {
     case "INIT_DATA":
@@ -10,7 +11,7 @@ function gymReducer(state, action) {
   }
 }
 
-const GymListPage = () => {
+const GymListFound = () => {
   const [rawData, dispatch] = useReducer(gymReducer, []);
   const [selectedId, setSelectedId] = useState(null);
   const [page, setPage] = useState(1);
@@ -121,4 +122,4 @@ const GymListPage = () => {
   );
 };
 
-export default GymListPage;
+export default GymListFound;

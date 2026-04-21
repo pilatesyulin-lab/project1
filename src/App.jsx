@@ -1,12 +1,5 @@
-import React from "react";
-import GymListPage from "./pages/GymListPage";
+import AppRouter from "./router/AppRouter";
 
-function App() {
-  return (
-    <div>
-      <GymListPage />
-    </div>
-  );
+export default function App() {
+  return <AppRouter />;
 }
-
-export default App;
